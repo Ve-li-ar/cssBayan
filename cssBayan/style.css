@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    line-height: 1.5;
+    background-color: #F6F6EC;
+    font-weight: bold;
+    height: 100vh;
+    margin-bottom: 20vw;
+}
+
+p {
+    margin: 0 0 1.56vw;
+}
+
+img {
+    width: 35vw;
+    margin: 0 auto;
+    display: block; 
+}
+
+.bayan {
+    cursor: pointer;
+    width: 80vw;
+    margin: 6vw auto;
+    
+  }
+
+.main__bayan {
+    font-weight: bold;
+    padding-bottom: 3vw;
+    margin-bottom: 0;
+}
+
+.second__bayan {
+    font-size: inherit;
+}
+
+.bayan-item {
+  margin-bottom: 1.56vw;
+  border-top: 0.3vw solid #aaabaaae;
+    color: blue;
+}
+
+.bayan-capture {
+    font-size: inherit;
+}
+
+.bayan-input {
+    display: none;
+  appearance: none;
+  width: 0;
+  height: 0;
+    padding: 0;
+margin: 0;
+}
+
+
+
+.bayan:hover .plus {
+    margin-top: 1vw;
+    width: 2vw;
+    height: 2vw;
+    background-color: black;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.bayan:hover .bayan-label{
+    color: black;
+} 
+
+
+.bayan-text {
+    display: none;
+    margin: 0 auto;
+}
+
+.bayan-title{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bayan-item:hover  .bayan-text  {
+    display: block;
+    transition: 3s ease-out 0.5s;
+    
+   
+}
+
+.flex {
+    display: flex;
+}
+
+
+.bayan-label {
+    cursor: pointer;
+    width: 50vw;;
+}
+
+
+.bayan-input[type="checkbox"]:checked ~ .bayan-text{
+   display: block;
+  
+}
+
+
+
+input:checked + label{
+    color: black;
+}
+
+/* .bayan:hover .plus{
+
+} */
+
+
+
+
+/* 
+.bayan-input[type="radio"]:checked {
+    color: blue;
+} */
+
+
+
+
+/* input:checked {
+    display: block;
+}
+
+.bayan-input:hover + .bayan-text {
+    display: block;
+}
+
+.bayan-input:checked {
+    display: block;
+}
+
+.bayan-text {
+  display: none;
+  font-size: 5vw;
+  color: inherit;
+}
+
+  .bayan-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 0;
+  }
+
+
+  .bayan:hover span{
+display: block;
+  } */
+
+  /* .plus--3 {
+    display: none;
+  }
+
+  .bayan-title--3:hover .plus--3{
+    display: block;
+    transform: rotate(90deg);
+  } */
+
+ 
+/* 
+  .bayan-title:hover + .bayan-input:cheched {
+    display: block;
+  } */
+
+
+  /* .bayan-title .plus--3{
+    display: none;
+  } */
