@@ -2,6 +2,7 @@ body {
     background:  #F5F5EB;
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1.2vw;
 }
 
 label img {
@@ -148,3 +149,10 @@ input[type="radio"] {
     display: none;
 }
 
+input[type="radio"]:not(:checked) + label {
+    color: blue;
+}
+
+.bayan__container:hover input[type="radio"]:not(:checked) + label {
+    color: black;
+}
