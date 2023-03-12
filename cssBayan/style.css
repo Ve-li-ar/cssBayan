@@ -2,12 +2,12 @@ body {
     background:  #F5F5EB;
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif; 
-    font-size: 1.2vw;
+    font-size: 4vw;
 }
 
 label img {
-    width: 20vw;
-    height: 20vw;
+    width: auto;
+    height: 30vw;
 }
 
 @keyframes zoomIn {
@@ -22,48 +22,28 @@ label img {
 .bayan__container {
     border-radius: 4px;
     margin: 2vw auto;
-    width: 55vw;
-    cursor: pointer;
+    width: 80vw;
+    
 }
 
 .bayan__item {
     border-top: 1px solid #bebeaf;
-    padding-top: 1vw;
     transition: box-shadow 0.9s ease-in-out;
-    font-size: 2vw;
+    height: auto;
 }
 
-.bayan__item:hover {
-    background-color: #f2f2f2;
-    cursor: pointer;
-}
+
+
 
 .bayan__header {
     background-color: #f0f0f0;
     color: #030202;
-    cursor: pointer;
+   
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 3vw;
     text-decoration: none;
     
-}
-
-.bayan__header:hover {
-    color: rgb(35, 42, 153); 
-    background-color: #C1C1C1;
-}
-
-.bayan__item img {
-    /* свойство, которое задает эффект оттенков */
-    filter: blur(10px);
-    /* плавное изменение св-ва filter */
-    transition: filter 0.3s ease-ain-out;
-}
-
-.bayan__item:hover img:hover {
-    /* отмена эффекта оттенка серого для изображения при наведении на само изображение. */
-    filter: blur(0);
 }
 
 .bayan__item input[type="radio"]:checked + .bayan__header .bayan-icon {
@@ -74,8 +54,8 @@ label img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    max-height: 300px;
-    cursor: pointer;
+
+ 
 
     animation-name: zoomIn;
     animation-duration: 1s;
@@ -87,8 +67,8 @@ label img {
 }
 
 .bayan-icon {
-    width: 35px;
-    height:35px;
+    width: 4.7vw;
+    height: 4.7vw;
     background-image: url('../cssBayan/img/plus.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -96,10 +76,6 @@ label img {
     transition: transform 0.9s ease-in-out;
    margin-top: .7vw;
    margin-right: .5vw;
-}
-
-.bayan__container:hover .bayan-icon {
-    visibility: visible;
 }
 
 
@@ -115,8 +91,8 @@ label img {
 
 .bayan-content {
     display: none;
-    padding: 10px;
-    cursor: pointer;
+    padding: 3vw;
+   
 }
 
 input[type="radio"] {
@@ -136,11 +112,6 @@ input[type="radio"] {
     display: none;
 }
 
-
-.bayan__item:hover .bayan-content {
-    display: block;
-}
-
 .bayan__item:not(:hover) .bayan-content {
     display: none;
 }
@@ -153,6 +124,78 @@ input[type="radio"]:not(:checked) + label {
     color: blue;
 }
 
+.bayan__item:active {
+    color:rgb(35, 42, 153);
+    opacity: 0.7;
+}
+
+@media only screen and (min-width: 1920px)  {
+    .bayan__item:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.bayan__header {
+    padding: 1vw;
+    font-size: 3vw;
+}
+
+.bayan__header:hover {
+    color: rgb(35, 42, 153); 
+    background-color: #C1C1C1;
+}
+
+.bayan__item:hover img:hover {
+    filter: blur(0);
+}
+
+.bayan__container:hover .bayan-icon {
+    visibility: visible;
+}
+
+.bayan__item:hover .bayan-content {
+    display: block;
+}
+
+.bayan__item img {
+    filter: blur(10px);
+    transition: filter 0.3s ease-ain-out;
+}
+
 .bayan__container:hover input[type="radio"]:not(:checked) + label {
     color: black;
+}
+
+h1 {
+    margin: 0.5vw;
+}
+
+img {
+    width: 30vw;
+    height: 30vw;
+}
+
+.bayan-content img {
+    min-height: 21vw;
+}
+
+.bayan-content {
+    padding: 1vw;
+}
+
+.bayan-icon {
+    width: 2.7vw;
+    height: 2.7vw;
+}
+
+label img {
+    height: 21vw;
+}
+
+.bayan__container,
+.bayan-content img,
+.bayan__header,
+.bayan-content {
+    cursor: pointer;
+}
 }
