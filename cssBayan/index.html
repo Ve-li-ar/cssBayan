@@ -1,81 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bayan</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="bayan">
-      <h1 class="main__bayan">CSS Bayan</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Bayan</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="bayan__container">
+  <h1>CSS Bayan</h1>
 
-      <div class="bayan-item">
-        <div class="bayan-title">
-          <input class="bayan-input" type="checkbox" id="bayan_1" checked />
-          <label class="bayan-label" for="bayan_1"
-            ><span>You won't be bored with recursion</span></label
-          >
-          <span class="plus"></span>
-          <img class="bayan-text" src="img/recursion.jpg" />
+    <div class="bayan__item">
+        <input type="radio" id="button_1" name="value" checked>
+        <label class="bayan__header" for="button_1">You won't be bored with recursion<span class="bayan-icon"></span></label>
+        <div class="bayan-content">
+            <label for="button_1">
+            <img src="img/recursion.jpg" alt="recursion">
+            </label>
         </div>
-      </div>
-
-      <div class="bayan-item">
-        <div class="bayan-title">
-          <input class="bayan-input" type="checkbox" id="bayan_2" />
-          <label class="bayan-label" for="bayan_2"
-            ><span>Announcements, dude!</span></label
-          >
-          <span class="plus"></span>
-          <img class="bayan-text" src="img/announcements.png" />
+    </div>
+    <div class="bayan__item">
+        <input type="radio" id="button_2" name="value">
+        <label class="bayan__header" for="button_2">Announcements, dude!<span class="bayan-icon"></span></label>
+        <div class="bayan-content">
+            <label for="button_2">
+            <img src="img/announcements.png" alt="Announcements">
+            </label>
         </div>
-      </div>
-
-      <div class="bayan-item">
-        <div class="bayan-title">
-          <input class="bayan-input" type="checkbox" id="bayan_3" />
-
-          <label class="bayan-label" for="bayan_3"
-            ><span>Do you issue certificates?</span></label
-          >
-
-          <span class="plus"></span>
-
-          <img class="bayan-text" src="img/certificates.jpg" />
+    </div>
+    <div class="bayan__item">
+        <input type="radio" id="button_3" name="value">
+        <label class="bayan__header" for="button_3">Do you issue certificates?<span class="bayan-icon"></span></label>
+        <div class="bayan-content">
+            <label for="button_3">
+            <img src="img/certificates.jpg" alt="certificates">
+            </label>
         </div>
-      </div>
-
-      <div class="bayan-item">
-        <div class="bayan-title">
-          <input class="bayan-input" type="checkbox" id="bayan_4" />
-
-          <label class="bayan-label" for="bayan_4"
-            ><span>Run away, idiots!</span></label
-          >
-
-          <span class="plus"></span>
-
-          <img src="img/knowledge.png" class="bayan-text" />
+    </div>
+    <div class="bayan__item">
+        <input type="radio" id="button_4" name="value">
+        <label class="bayan__header" for="button_4">Run away, idiots!<span class="bayan-icon"></span></label>
+        <div class="bayan-content">
+            <label for="button_4">
+            <img src="img/knowledge.png" alt="Run away, idiots!">
+            </label>
         </div>
-      </div>
-
-      <div class="bayan-item">
-        <div class="bayan-title">
-          
-            <input class="bayan-input" type="checkbox" id="bayan_5"  />
-            
-              <label class="bayan-label" for="bayan_5"
-                ><span>More memes to the God of memes!</span></label
-              >
-            <span class="plus"></span>
-         
-          
-            <img  class="bayan-text" src="img/mems.png" />
-          </div>
+    </div>
+    <div class="bayan__item">
+        <input type="radio" id="button_5" name="value">
+        <label class="bayan__header" for="button_5">More memes to the God of memes!<span class="bayan-icon"></span></label>
+        <div class="bayan-content">
+            <label for="button_5">
+            <img src="img/mems.png" alt="More memes to the God of memes!">
+            </label>
         </div>
-      </div>
- 
-  </body>
+    </div>
+    
+</div>
+</body>
 </html>
