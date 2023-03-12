@@ -4,6 +4,11 @@ body {
     font-family: Arial, Helvetica, sans-serif; 
 }
 
+label img {
+    width: 20vw;
+    height: 20vw;
+}
+
 @keyframes zoomIn {
     from {
         transform: scale(0);
@@ -48,16 +53,16 @@ body {
     background-color: #C1C1C1;
 }
 
-.bayan__item:hover img {
+.bayan__item img {
     /* свойство, которое задает эффект оттенков */
-    filter: grayscale(100%);
+    filter: blur(10px);
     /* плавное изменение св-ва filter */
     transition: filter 0.3s ease-ain-out;
 }
 
 .bayan__item:hover img:hover {
     /* отмена эффекта оттенка серого для изображения при наведении на само изображение. */
-    filter: grayscale(0%);
+    filter: blur(0);
 }
 
 .bayan__item input[type="radio"]:checked + .bayan__header .bayan-icon {
